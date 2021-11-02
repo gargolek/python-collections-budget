@@ -1,13 +1,13 @@
 #! /usr/bin/env python3
 
-from Expense import *
+from . import Expense
 import collections
 import matplotlib.pyplot as plt
 
-file = "../data/spending_data.csv"
 
-expenses  = Expenses()
-expenses.read_expenses(file)
+
+expenses  = Expense.Expenses()
+expenses.read_expenses("./data/spending_data.csv")
 
 
 spending_categories = []
